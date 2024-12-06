@@ -1,0 +1,39 @@
+/* Styling untuk Modal */
+#deleteModal {
+    display: none; /* Pastikan modal tidak muncul di awal */
+    backdrop-filter: blur(5px); /* Efek blur di belakang modal */
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    background-color: rgba(0, 0, 0, 0.5); /* Warna gelap dengan transparansi */
+  }
+  
+  #deleteModal .modal-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px; /* Lebar maksimum modal */
+    text-align: center;
+  }
+  
+  #deleteModal h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  #deleteModal p {
+    margin-bottom: 1.5rem;
+  }
+  
+  #deleteModal button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+  }
+  

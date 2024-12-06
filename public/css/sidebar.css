@@ -1,0 +1,23 @@
+#sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    transform: translateX(-100%); /* Default, sidebar tersembunyi di mobile */
+    transition: transform 0.3s ease-in-out;
+    height: 100vh; /* Pastikan sidebar mengisi seluruh tinggi layar */
+    overflow: hidden; /* Menghilangkan scrollbar */
+    z-index: 1000; /* Pastikan sidebar berada di atas konten */
+}
+
+@media (min-width: 1024px) {
+    #sidebar {
+        position: fixed; /* Tetap fixed di sisi kiri */
+        transform: translateX(0); /* Selalu terlihat pada tampilan desktop */
+        height: 100vh; /* Mengambil tinggi penuh layar */
+        overflow: hidden; /* Menghilangkan scrollbar */
+    }
+}
+
+#sidebar.translate-x-0 {
+    transform: translateX(0); /* Sidebar muncul */
+}
