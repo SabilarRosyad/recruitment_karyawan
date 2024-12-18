@@ -68,7 +68,7 @@
             <!-- Mobile menu dropdown -->
             <div id="mobile-menu" class="hidden md:hidden bg-black text-white">
                 <ul class="flex flex-col space-y-2 py-4">
-                <li class="relative ml-auto">
+                    <li class="relative ml-auto">
                         <div class="flex items-center space-x-3">
                                 <span class="text-white text-sm">{{ auth()->user()->username }}</span>
                                 <!-- Profile Picture -->

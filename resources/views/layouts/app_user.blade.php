@@ -10,7 +10,7 @@
 <body class="bg-gray-100 m-0">
     @include('partials.navbar_user') <!-- Navbar -->
 
-    <main>
+    <main class="mt-20 mb-16"> <!-- Add margin-top for space below navbar and margin-bottom for space above footer -->
         @yield('content') <!-- Content Section -->
     </main>
 

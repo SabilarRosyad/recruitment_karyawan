@@ -3,6 +3,8 @@
 @section('title', 'Edit Profile')
 
 @section('content')
+    <!-- Add margin-top to push content below navbar -->
+    <div class="mt-20">
         <form action="{{ route('profile.update', ['id' => auth()->user()->id]) }}" method="POST" enctype="multipart/form-data">
             @csrf
             @method('PUT')
@@ -46,4 +48,5 @@
                 </div>
             </div>
         </form>
+    </div>
 @endsection
